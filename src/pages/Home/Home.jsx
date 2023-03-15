@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { lazy, Suspense } from "react";
 import { getTrendMovies } from 'service/movie-service';
 import { HomeTitle } from './Home.styled';
-import { LoadingView as Loading } from '../components/LoadingView/LoadingView';
+import { LoadingView as Loading } from '../../components/LoadingView/LoadingView';
 
-const MoviesList = lazy(() => import('../../src/components/MoviesList/MoviesList'));
+const MoviesList = lazy(() => import('../../components/MoviesList/MoviesList'));
 
  const Home = () => {
     const [movies, setMovies] = useState([]);

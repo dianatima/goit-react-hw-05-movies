@@ -4,7 +4,7 @@ import { useState, useEffect, Suspense } from 'react';
 import { fetchMovie } from 'service/movie-service';
 import {  Outlet } from 'react-router-dom';
 import { AdditionalInfo, LinkWrap } from './MovieDetails.styled';
-import { LoadingView as Loading } from '../components/LoadingView/LoadingView';
+import { LoadingView as Loading } from '../../components/LoadingView/LoadingView';
 
 export const MovieDetails = () => {
     const { movieId } = useParams();

@@ -3,9 +3,9 @@ import { lazy } from "react";
 import { Header } from 'components';
 
 
-const Home = lazy(() => import('../pages/Home'));
+const Home = lazy(() => import('../pages/Home/Home'));
 const Movies = lazy(() => import('../pages/Movies'));
-const MovieDetails = lazy(() => import('../pages/MovieDetails'));
+const MovieDetails = lazy(() => import('../pages/MovieDetails/MovieDetails'));
 const Cast = lazy(() => import('../pages/Cast'));
 const Reviews = lazy(() => import('../pages/Reviews'));
 // const ErrorPage = lazy(() => import("../pages/ErrorPage"));
