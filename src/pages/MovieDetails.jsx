@@ -22,8 +22,8 @@ export const MovieDetails = () => {
             <Suspense fallback={<Loading />}>
             <MovieCard movie={movie} />
             <LinkWrap>
-                <AdditionalInfo to={`cast`} state={{ from: location.state?.from ?? '/' }}>Cast</AdditionalInfo>
-                <AdditionalInfo to={`reviews`} state={{ from: location.state?.from ?? '/' }}>Reviews</AdditionalInfo>
+                <AdditionalInfo to={`cast`} state={{ from: location?.state.from ?? '/' }}>Cast</AdditionalInfo>
+                <AdditionalInfo to={`reviews`} state={{ from: location?.state.from ?? '/' }}>Reviews</AdditionalInfo>
                 </LinkWrap>
             </Suspense>
             <Suspense fallback={<div>Loading...</div>}>

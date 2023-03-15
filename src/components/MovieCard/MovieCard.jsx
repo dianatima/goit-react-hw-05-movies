@@ -16,7 +16,7 @@ export const MovieCard = ({
     
     return (
       <>
-            <BackLink to={location.state.from ?? '/'}>  &#171; Go Back</BackLink>
+            <BackLink to={location?.state?.from ?? '/'}>  &#171; Go Back</BackLink>
             <MovieTitle>{title}({release_date ? release_date.slice(0, 4) : 'No release date'})</MovieTitle>
             <MovieWrap>
           <MovieImg src={poster_path ? `https://image.tmdb.org/t/p/w500${poster_path}` : defaultPoster} alt="poster" />
